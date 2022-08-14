@@ -1,16 +1,41 @@
 <!DOCTYPE html>
 <html>
-    <body>
-        <h1 id = "here">Hello I am here</h1>
-        <input type="text" id="name"/>
+    <body id="color">
+        <h1 id = "here">Hello</h1>
+       <!--<input type="text" id="name"/>-->
+
+        <button onclick="red()">Red Color</button>
+        <button onclick="green()">Green Color</button>
         <script type="text/javascript">
             console.log("Hello This is me again");
-            document.write("<h1>Try me again!</h1>");
-            document.getElementById("here").innerHTML = "Eli is new to this shit";
-            document.write(document.getElementById("here").innerHTML)
-            document.getElementById("name").value = "What is you name";
-            var name = "Jame";
-            console.log(name);
+            //document.write("<h1>Try me again!</h1>");
+            //document.getElementById("here").innerHTML = "Eli is new to this shit";
+            //document.write(document.getElementById("here").innerHTML)
+            //document.getElementById("name").value = "What is you name";
+            //var name = "Jame";
+            //console.log(name);
+
+            // Js functions
+            /*function red(){
+                document.getElementById("here").innerHTML = "Red";
+            }
+
+            function green(){
+                document.getElementById("here").innerHTML = "Green";
+            } */
+
+            function red(){
+                document.getElementById("here").style.color = "Red";
+            }
+
+            function green(){
+                document.getElementById("here").style.color = "Green";
+            }
+
+            function body() {
+                document.body.style.background = "gray";
+            }
+
         </script>
 
     </body>
