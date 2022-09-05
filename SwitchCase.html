@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1 id="header">Hello</h1>
+        <input type="text" id="inputme"/>
+        <button onclick="pressed()">Click</button>
+
+        <script>
+            function pressed(){
+                var text = document.getElementById("input").value;
+                switch (text){
+                    case "red":
+                        document.getElementsById("header").style.color = "red";
+                        break;
+                    case "black":
+                        document.getElementsById("header").style.color = "black";
+                        break;
+                }
+            }
+        </script>
+    </body>
+</html>
